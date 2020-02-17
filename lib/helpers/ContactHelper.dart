@@ -94,6 +94,8 @@ class Contact{
         phone = map[phoneColumn];
     }
 
+    Contact();
+
     Map toMap(){
         Map<String, dynamic> map = {
             nameColumn: name,
@@ -109,7 +111,7 @@ class Contact{
 
     @override
     String toString() {
-        return 'Contact{}';
+        return 'id: $id, name: $name, email: $email, phone: $phone, image: $image';
     }
 
 
